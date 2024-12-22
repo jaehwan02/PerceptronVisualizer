@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>숫자 (1 vs 2) 분류 - 은닉 16→16→16</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+			}
+			h1 {
+				margin: 20px;
+			}
+			#canvas-box {
+				border: 2px solid #aaa;
+				background-color: #fff;
+				cursor: crosshair;
+			}
+			#prediction-result {
+				font-size: 1.2em;
+				margin-top: 10px;
+			}
+			#result-img {
+				margin-top: 10px;
+				border: 1px solid #ccc;
+				max-width: 800px;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>MLP (16→16→16) 1, 2 분류</h1>
+		<canvas id="canvas-box" width="200" height="200"></canvas><br />
+		<button id="clear-btn">Clear</button>
+		<p id="prediction-result">예측 결과: -</p>
+		<img id="result-img" alt="시각화 결과" />
+
+		<script src="/static/script.js"></script>
+	</body>
+</html>
